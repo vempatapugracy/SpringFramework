@@ -1,8 +1,6 @@
-@PreDestroy
+registerBean()
 
-if we want to perform some operations automatically before destroying spring context or destroying all the beans then we can use @PreDestroy
-Mostly used for closing IO resources or Database connections etc
-It's in Jakarta EE
-To use this annotation, need to add jakarta-annotation dependency in pom.xml
+Whenever you want to create multiple objects of same class but on condition, like if condition satisfied create one object or else create another object inside Spring Context, then we can use registerBean().
 
-
+context.registerBean("beanName",beanClass,Supplier);
+Supplier is a concept in lambda expressions, which doesn't take any input but supply the output.

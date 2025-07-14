@@ -12,6 +12,8 @@ public class SpringMain {
         System.out.println("using postconstruct annotation \""+vehicle1.getName()+"\"");
         vehicle1.printHello();
 
+        context.close();
+
     }
 
 }
