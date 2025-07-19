@@ -16,8 +16,12 @@
         <module name="example4" />
         <module name="example1" />
         <module name="example11" />
+        <module name="example12" />
         <module name="example10" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="example11 (1)" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
